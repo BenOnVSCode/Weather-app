@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,WACI,oBAAsB,CACtB,oDACJ,CAEA,EACI,+BACJ","file":"main.5bf351cd.chunk.css","sourcesContent":["@font-face {\n    font-family: 'myfont' ;\n    src: url(./font/FONT.ttf)\n}\n\n* {\n    font-family: 'myfont', sans-serif ;\n}"]}
