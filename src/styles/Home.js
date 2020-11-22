@@ -9,6 +9,8 @@ export const UIContainer = styled.div`
     width: 100vw ;
     height: 100vh ;
     background: #34626c ;
+    margin: 0 auto ;
+    text-align: center ;
 `
 
 
