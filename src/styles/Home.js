@@ -17,7 +17,7 @@ export const UIContainer = styled.div`
 export const CityName = styled.h1 `
     font-weight: lighter ;
     font-size: clamp(1rem, 5vw, 3rem); 
-    margin: 0rem 0 2rem 1rem  ; 
+    margin: 0rem 0 2rem 0 ; 
     color: #e5e5e5 ;
 `
 
@@ -29,7 +29,7 @@ export const Icon = styled.img `
 export const Condition  = styled.h2 `
     font-weight: 300 ;
     font-size: clamp(1rem, 5vw, 3rem); 
-    margin: 1rem 0 1rem 1rem  ; 
+    margin: 1rem 0 1rem 0  ; 
     color: #e5e5e5 ;
 `
 
