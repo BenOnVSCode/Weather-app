@@ -25,27 +25,29 @@ function App() {
        navigator.geolocation.getCurrentPosition(position => {
          setLat(position.coords.latitude);
          setLog(position.coords.longitude);
+         console.log(position.coords.latitude)
        })
      }
-
+     
      // Turns the coords to city name 
 
      if(lat && log !== '') {
        axios.get(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${log}&localityLanguage=en`)
       .then(function (res) {
         setCity(res.data.city);
+        
       })
      }
       
-  
+     
      //getting the data from the weather API
    if(city !== '') {
-    axios.get(`http://api.weatherapi.com/v1/current.json?key=1e70683f9d0b4f3daec155809202111&q=${city}`)
+    axios.get(`https://api.weatherapi.com/v1/current.json?key=1e70683f9d0b4f3daec155809202111&q=${city}`)
     .then(function (response) {
       if(data === '') {
-         setData(response.data.current);
+        setData(response.data.current);
         setCountry(response.data.location.country);
-        
+        console.log(response)
       }
        setTempc(data.temp_c);
       setTempf(data.temp_f);
@@ -140,13 +142,14 @@ function App() {
         }
     }
     }
+  
 
 
   })
 
 
 
-      
+  console.log(lat)
 
   
   return (
